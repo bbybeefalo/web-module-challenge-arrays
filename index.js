@@ -85,7 +85,8 @@ Use the addFlavor function below to do the following:
 
 
 function addFlavor(originalFlavors, newFlavor){
-  return originalFlavors.unshift(newFlavor);
+ originalFlavors.unshift(newFlavor);
+ return originalFlavors;
  }
 
 addFlavor(originalFlavors, 'Rainbow Sherbert');
