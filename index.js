@@ -168,15 +168,14 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-const includesChocolate = []
 
 function filterByWord(originalFlavors, flavorKeyword){
+  const includesChocolate = []
   for (let i = 0; i < originalFlavors.length; i++){
     if(originalFlavors[i].includes(flavorKeyword)){
       includesChocolate.push(originalFlavors[i]);
     }
-  }
-  return includesChocolate;
+  } return includesChocolate
 }
 
 console.log(filterByWord(originalFlavors, 'Chocolate'));
