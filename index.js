@@ -148,7 +148,7 @@ function removeFlavorByName(originalFlavors, byeFlavor){
   return originalFlavors;
 }
 
-console.log(removeFlavorByName(originalFlavors, 'Rocky Road'));
+// console.log(removeFlavorByName(originalFlavors, 'Rocky Road'));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
@@ -168,12 +168,18 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
+const includesChocolate = []
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(originalFlavors, flavorKeyword){
+  for (i = 0; i < originalFlavors.length; i++){
+    if(originalFlavors[i].includes(flavorKeyword)){
+      includesChocolate.push(originalFlavors[i]);
+    }
+  }
+  return includesChocolate;
 }
 
-
+console.log(filterByWord(originalFlavors, 'Chocolate'));
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
