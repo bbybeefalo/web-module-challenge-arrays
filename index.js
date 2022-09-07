@@ -171,7 +171,7 @@ Use the filterByWord function below to do the following:
 const includesChocolate = []
 
 function filterByWord(originalFlavors, flavorKeyword){
-  for (i = 0; i < originalFlavors.length; i++){
+  for (let i = 0; i < originalFlavors.length; i++){
     if(originalFlavors[i].includes(flavorKeyword)){
       includesChocolate.push(originalFlavors[i]);
     }
