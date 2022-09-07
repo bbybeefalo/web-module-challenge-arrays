@@ -143,8 +143,8 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(originalFlavors, byeFlavor){
-  n = originalFlavors.indexOf(byeFlavor);
-  originalFlavors.splice(n, 1);
+  byeFlavor = originalFlavors.indexOf(byeFlavor);
+  originalFlavors.splice(byeFlavor, 1);
   return originalFlavors;
 }
 
