@@ -69,7 +69,7 @@ function is31Flavors(originalFlavors){
   }
  }
 
-console.log(is31Flavors(originalFlavors));
+// console.log(is31Flavors(originalFlavors));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -90,7 +90,6 @@ function addFlavor(originalFlavors, newFlavor){
  }
 
 addFlavor(originalFlavors, 'Rainbow Sherbert');
-console.log(originalFlavors);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -105,8 +104,10 @@ Use the removeLastFlavor function below to do the following:
 
 
 function removeLastFlavor(originalFlavors){
- return originalFlavors.pop();
+  originalFlavors.pop();
+  return originalFlavors;
 }
+// console.log(removeLastFlavor(originalFlavors));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -124,6 +125,8 @@ Use the getFlavorByIndex function below to do the following:
 function getFlavorByIndex(originalFlavors, i){
   return originalFlavors[i];
 }
+
+console.log(getFlavorByIndex(originalFlavors, 2));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that single flavor from the array.  
